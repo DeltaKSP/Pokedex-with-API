@@ -5,21 +5,24 @@ function convertPokemonToLi(pokemonTypes){
 function convertPokemonToLi(pokemon) {
     return `
     <li class="pokemon">
-        <span class="number">#${pokemon.number}</span>
+        <span class="number">#${pokemon.order}</span>
         <span class="Name">${pokemon.name}</span>
         <div class="detail">
             <ol class="types">
             ${convertPokemonToLi(pokemon.types.join(''))}
             </ol>
-            <img src="/CSS/001.png" alt="${pokemon.name}">
+            <img src="${pokemon.sprites.other.dream_world.front_default}" 
+                alt="${pokemon.name}">
         </div>
 </li>
     `
 }
 
 const pokemonList = document.getElementById('pokemonList')
+
 pokeApi.getPokemons().then((pokemons = []) => {
-    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
+    const newHTML = pokemons.map(convertPokemonToLi).join('')
+    pokemonList.innerHTML = newHTML
 })
 
 
