@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="Stylesheet" href="/CSS/Projeto.css">
+    <link rel="Stylesheet" href="/assets/CSS/Projeto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
@@ -19,22 +19,17 @@
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
-            <li class="pokemon">
-                <span class="number">#001</span>
-                <span class="Name">Bulbasaur</span>
-                <div class="detail">
-                    <ol class="types">
-                        <li class="type">Grama</li>
-                        <li class="type">Veneno</li>
-                    </ol>
-                    <img src="/img/001.png" alt="Bulbasaur">
-                </div>
-            </li>
+            
         </ol>
+        <div class="pagination">
+            <button id="LoadMorebutton" type="button">
+                Carregar mais...
+            </button>
+        </div>
     </section>
-    
-    <script src="/JS/pokeapi.js"></script>
-    <script src="/JS/main.js"></script>
+    <script src="/assets/JS/PKModel.js"></script>
+    <script src="/assets/JS/pokeapi.js"></script>
+    <script src="/assets/JS/main.js"></script>
 </body>
 </html>
 <metadata></metadata>
