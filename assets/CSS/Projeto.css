@@ -3,17 +3,17 @@
     box-sizing: border-box;
     text-transform: capitalize;
 }
-
 .conteudo{
     padding: 1rem;
     background-color: lightgray;
-    border-radius: 3%;
 }
 .body{
     background-color: #fff;
 }
-.conteudo h1{
-    margin: 0;
+
+.conteudo .pokedex .img{
+    position: absolute;
+    right: 0px;
 }
 
 @media screen and (min-width: 992px) {
