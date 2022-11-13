@@ -11,10 +11,6 @@
     background-color: #fff;
 }
 
-.conteudo .pokedex .img{
-    position: absolute;
-    right: 0px;
-}
 
 @media screen and (min-width: 992px) {
     .content {
