@@ -66,7 +66,7 @@ ol.pokemons{
     text-align: center;
     letter-spacing: 1px;
 }
-.pokemon .number{
+.span .number{
     color: #000;
     opacity: .3;
     text-align: right;
